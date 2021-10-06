@@ -2,6 +2,11 @@ package org.example.promotion.engine.service;
 
 import java.util.List;
 
+/**
+ * This code is for product and their orders.
+ *
+ */
+
 public class Order {
     public int orderID;
     public List<Product> products;

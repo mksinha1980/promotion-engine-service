@@ -3,14 +3,13 @@ package org.example.promotion.engine.service;
 import java.util.*;
 
 /**
- * Hello world!
+ * This code is for Promotion Engine code test.
  *
  */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
         //create list of promotions
         //we need to add information about Product's count
         Map<String, Integer> d1 = new HashMap<>();

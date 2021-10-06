@@ -2,6 +2,11 @@ package org.example.promotion.engine.service;
 
 import java.util.List;
 
+/**
+ * This code is for Promotion Checker and calculate total product counts and their costs.
+ *
+ */
+
 public class PromotionChecker {
     //returns PromotionID and count of promotions
     public static double GetTotalPrice(Order ord, Promotion prom)
@@ -13,11 +18,7 @@ public class PromotionChecker {
                 .filter(grp -> prom.productInfo.Any(y=>grp.Key==y.Key && grp.Count()>=y.Value))
                 .Select(grp=> grp.Count())
                 .Sum();
-        /*int copp = ord.products
-                .GroupBy(x=> x.Id) //A,A,A,B,B,C
-                .Where(grp=> prom.productInfo.Any(y=>grp.Key==y.Key && grp.Count()>=y.Value))
-                .Select(grp=> grp.Count())
-                .Sum();*/
+
         int totalPriceOfA = (((counterOfA / 3)
                 * 130)
                 + (counterOfA % (3 * priceOfA)));

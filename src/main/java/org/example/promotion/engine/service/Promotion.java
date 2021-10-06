@@ -1,6 +1,10 @@
 package org.example.promotion.engine.service;
 
 import java.util.Map;
+/**
+ * This code is for product and their Promotions.
+ *
+ */
 
 public class Promotion {
     public int promotionID;

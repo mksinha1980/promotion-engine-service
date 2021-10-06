@@ -1,5 +1,10 @@
 package org.example.promotion.engine.service;
 
+/**
+ * This code is for product and their default values.
+ *
+ */
+
 public class Product {
     public String id;
     public double price;

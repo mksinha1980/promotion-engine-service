@@ -2,6 +2,11 @@ package org.example.promotion.engine.service;
 
 import java.util.List;
 
+/**
+ * This code is for product services.
+ *
+ */
+
 public class ProductService implements IProductService{
     @Override
     public void GetPriceByType(Product product) {
